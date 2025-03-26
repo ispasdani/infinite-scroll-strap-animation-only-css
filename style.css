@@ -1,0 +1,100 @@
+body {
+    padding: 0px 50px;
+}
+
+.title-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.title-logo h1 {
+    font-size: 72px;
+}
+
+/* .title-logo img {
+    padding-top: 10px;
+    width: 65px;
+    margin-right: 15px;
+} */
+
+.news-ticker {
+    font-size: 15px;
+    padding-block: 8px;
+    border-block: 1px solid;
+    display: flex;
+    
+    overflow: hidden;
+    user-select: none;
+    --gap: 20px;
+    gap: var(--gap);
+}
+
+.news-ticker ul {
+    list-style: none;
+    display: flex;
+    flex-shrink: 0;
+    min-width: 100%;
+    justify-content: space-between;
+    gap: var(--gap);
+    align-items: center;
+    
+    animation: scroll 20s linear infinite;
+}
+
+.news-ticker ul li {
+    cursor: pointer;
+}
+
+.news-ticker:hover ul {
+    animation-play-state: paused;
+}
+
+@keyframes scroll {
+    to {
+        transform: translateX(calc(-100% - 20px));
+    }
+}
+
+.news-ticker .company {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.playfair-display-sc-regular {
+    font-family: "Playfair Display SC", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .playfair-display-sc-bold {
+    font-family: "Playfair Display SC", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .playfair-display-sc-black {
+    font-family: "Playfair Display SC", serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .playfair-display-sc-regular-italic {
+    font-family: "Playfair Display SC", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .playfair-display-sc-bold-italic {
+    font-family: "Playfair Display SC", serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .playfair-display-sc-black-italic {
+    font-family: "Playfair Display SC", serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  
